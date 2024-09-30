@@ -1,0 +1,141 @@
+
+@font-face {
+    font-family: 'Blanka';
+    src: url('Blanka-Regular.otf') format('truetype');
+}
+
+header h1
+{
+    margin: 0;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: #00796b;
+    font-family: 'Blanka'; 
+}
+
+header h2
+{
+    text-align: center;
+    font-size:xx-large;
+    font-weight: 300;
+    color: #004d40;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.Contact
+{
+    border: 2px solid ;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-decoration-color: #e0f7fa ;
+}
+.Contact:hover
+{
+    background-color: #004d40;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e0f7fa;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+}
+
+.navbar {
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 50px;
+    border-radius: 20px; 
+    border-width: 1px; 
+    border-color: #00796b; 
+    border-style: solid;
+    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+}
+
+.navbar .logo {
+image-rendering: auto;
+height: 100px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navbar nav .download-btn {
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.hero-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    color: #004d40;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #004d40;
+}
+
+.subject-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.subject-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subject-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subject-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.learn-more-btn:hover {
+    background-color: #004d40;
+}
