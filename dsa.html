@@ -4,20 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSA</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="detail.css">
 </head>
 <body>
-    <header>
-        <h1>Data Structures and Algorithms</h1>
-    </header>
+    <div class="container">
+       <div class="Heading"><h1>Data Structures and Algorithms</h1></div>
+        <div class="content">
 
-    <section>
-        <p>Data Structures and Algorithms (DSA) are essential topics in computer science, covering efficient ways to organize and manipulate data.</p>
-        <!-- Add more details about DSA here -->
-    </section>
-
-    <div class="start-quiz">
-        <a href="dsa-quiz.html" class="learn-more-btn">Start Quiz</a>
+            <p><strong>Data Structures and Algorithms (DSA)</strong> are cornerstones of computer science and programming that enable efficient data management, manipulation, and problem-solving. These two concepts are intertwined: data structures provide a framework for organizing data, while algorithms offer systematic methods for operating on that data. Mastering both is crucial for developing efficient, scalable software systems.</p>
+        
+            <h3>Data Structures</h3>
+        
+            <p>A <strong>data structure</strong> is a specialized format for organizing and storing data in a way that allows for efficient access and modification. The choice of data structure is influenced by the nature of the data and the operations that need to be performed. Below are common types of data structures and their nuanced differences:</p>
+        
+            <p><strong>1. Arrays</strong>: Arrays are contiguous blocks of memory where elements are stored in sequential order. They allow for constant-time access (<code>O(1)</code>) to elements when the index is known. However, inserting or deleting an element in the middle of an array requires shifting other elements, leading to linear time complexity (<code>O(n)</code>) for these operations. Arrays are ideal for static data where quick access to elements is more important than frequent modification.</p>
+        
+            <p><strong>2. Linked Lists</strong>: Unlike arrays, linked lists consist of nodes, each containing data and a reference (or pointer) to the next node in the sequence. In <strong>doubly linked lists</strong>, nodes also have pointers to previous nodes. Inserting or deleting elements in a linked list can be done in constant time (<code>O(1)</code>), provided you have a reference to the node where the operation occurs. However, accessing an element requires traversing the list from the start, which takes linear time (<code>O(n)</code>).</p>
+        
+            <p><strong>3. Stacks</strong>: A stack is a last-in, first-out (LIFO) data structure where the most recent element added is the first one to be removed. The key operations are <em>push</em> (to add an item to the top), <em>pop</em> (to remove the top item), and <em>peek</em> (to view the top item). All operations typically take constant time (<code>O(1)</code>). Stacks are frequently used for tasks like parsing expressions, managing function calls in recursion, and undo operations in software applications.</p>
+        
+            <p><strong>4. Queues</strong>: A queue is a first-in, first-out (FIFO) data structure where the first element added is the first one to be removed. Common operations are <em>enqueue</em> (to add an item at the rear), <em>dequeue</em> (to remove the front item), and <em>peek</em> (to view the front item). Like stacks, these operations generally take <code>O(1)</code> time.</p>
+        
+            <p><strong>5. Trees</strong>: A tree is a hierarchical data structure consisting of nodes, with one node designated as the root. Each node contains data and references to child nodes. A <strong>binary tree</strong> is a special type where each node has at most two children. Searching, inserting, and deleting in a balanced binary search tree (BST) take <code>O(log n)</code> time. Trees are ideal for representing hierarchical relationships, such as file systems or organizational structures.</p>
+        
+            <p><strong>6. Heaps</strong>: A heap is a specialized tree-based data structure that satisfies the heap property. In a <strong>max-heap</strong>, the parent nodes are always greater than their children, while in a <strong>min-heap</strong>, the parent nodes are smaller than their children. Inserting into a heap or extracting the maximum/minimum element takes <code>O(log n)</code> time. Heaps are commonly used in priority queues.</p>
+        
+            <p><strong>7. Graphs</strong>: A graph consists of a set of vertices (nodes) and edges that connect pairs of vertices. Graphs can be <em>directed</em> or <em>undirected</em>, and edges can be weighted or unweighted. Algorithms like <strong>Depth-First Search (DFS)</strong> and <strong>Breadth-First Search (BFS)</strong> are used to explore nodes in a graph. Graphs are powerful in representing networks, such as social networks, transport systems, or the web's hyperlink structure.</p>
+        
+            <h3>Algorithms</h3>
+        
+            <p>An <strong>algorithm</strong> is a sequence of well-defined instructions that solves a particular problem or performs a task. Algorithms can be categorized based on the type of task they accomplish and their efficiency.</p>
+        
+            <p><strong>1. Sorting Algorithms</strong>: Bubble sort, merge sort, and quicksort are among the most well-known sorting algorithms. While bubble sort is simple but inefficient, both merge sort and quicksort use divide-and-conquer techniques and are much faster for large datasets, with time complexities of <code>O(n log n)</code> on average.</p>
+        
+            <p><strong>2. Search Algorithms</strong>: Linear search and binary search are key search algorithms. Linear search operates in <code>O(n)</code> time by checking each element sequentially, while binary search is more efficient, working in <code>O(log n)</code> time by repeatedly dividing the search space in half, but it requires the data to be sorted.</p>
+        
+            <p><strong>3. Dynamic Programming</strong>: Dynamic programming solves complex problems by breaking them into simpler subproblems, storing intermediate results to avoid redundant computations. It is used in optimization problems like the knapsack problem and calculating Fibonacci numbers.</p>
+        
+            <p><strong>4. Greedy Algorithms</strong>: Greedy algorithms make locally optimal choices in the hope that they will lead to a globally optimal solution. Dijkstra’s algorithm and the fractional knapsack problem are examples where this strategy is effective.</p>
+        
+            <p><strong>5. Graph Algorithms</strong>: Algorithms such as DFS, BFS, and Dijkstra's shortest path algorithm are fundamental for working with graph data structures. These algorithms solve problems related to connectivity, pathfinding, and shortest route calculations.</p>
+        
+            <h3>Time and Space Complexity</h3>
+        
+            <p>The efficiency of an algorithm is often measured using <strong>Big O notation</strong>, which describes the upper bound of an algorithm’s time or space requirements relative to the input size <em>n</em>. Understanding this allows developers to predict how an algorithm will perform as input sizes grow.</p>
+        
+            <p><strong>Why DSA Matters</strong>: DSA enables programmers to write optimized, efficient code that can handle large datasets and complex systems. It is especially important for large-scale applications like search engines, real-time systems, and databases. Additionally, DSA is a critical skill set in technical interviews, often used to assess problem-solving abilities.</p>
+        
+        </div>
+        <div>
+        <a href="dsa-quiz.html" class="Start">Start Quiz</a>
+        </div>
     </div>
 </body>
 </html>

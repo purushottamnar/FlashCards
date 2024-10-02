@@ -1,5 +1,5 @@
 
-quizData = [
+const quizData = [
     {
         question: "What is the time complexity of binary search?",
         a: "O(n)",
@@ -17,30 +17,71 @@ quizData = [
         correct: "b"
     },
     {
-        question: "What is the best case time complexity of bubble sort?",
-        a: "O(n)",
-        b: "O(n log n)",
-        c: "O(n^2)",
-        d: "O(log n)",
+        question: "What is the time complexity for accessing an element in an array by index?",
+        a: "O(1)",
+        b: "O(n)",
+        c: "O(log n)",
+        d: "O(n^2)",
         correct: "a"
     },
     {
-        question: "Which is an example of a dynamic data structure?",
+        question: "Which data structure allows constant-time insertion and deletion with a known reference?",
         a: "Array",
         b: "Stack",
-        c: "Queue",
-        d: "Linked List",
-        correct: "d"
+        c: "Linked List",
+        d: "Queue",
+        correct: "c"
     },
     {
-        question: "What does 'DSA' stand for?",
-        a: "Data Systems Algorithm",
-        b: "Data Structures Algorithm",
-        c: "Data Structures and Algorithms",
-        d: "Dynamic Systems and Algorithms",
-        correct: "c"
+        question: "Which algorithm makes locally optimal choices in hopes of finding a global optimum?",
+        a: "Dynamic Programming",
+        b: "Greedy Algorithm",
+        c: "Graph Algorithm",
+        d: "Sorting Algorithm",
+        correct: "b"
+    },
+    {
+        question: "What type of tree structure has nodes with at most two children?",
+        a: "Graph",
+        b: "Binary Tree",
+        c: "Heap",
+        d: "Linked List",
+        correct: "b"
+    },
+    {
+        question: "In which data structure do parent nodes have higher values than their children in a max-heap?",
+        a: "Min-Heap",
+        b: "Max-Heap",
+        c: "Binary Search Tree",
+        d: "Graph",
+        correct: "b"
+    },
+    {
+        question: "Which graph traversal algorithm explores the nodes in layers?",
+        a: "Depth-First Search",
+        b: "Breadth-First Search",
+        c: "Dijkstra's Algorithm",
+        d: "Prim's Algorithm",
+        correct: "b"
+    },
+    {
+        question: "Which of the following is an example of a Divide-and-Conquer sorting algorithm?",
+        a: "Bubble Sort",
+        b: "Merge Sort",
+        c: "Insertion Sort",
+        d: "Selection Sort",
+        correct: "b"
+    },
+    {
+        question: "What is the time complexity for inserting into a balanced binary search tree (BST)?",
+        a: "O(n)",
+        b: "O(log n)",
+        c: "O(1)",
+        d: "O(n^2)",
+        correct: "b"
     }
 ];
+
 
 const quiz = document.getElementById('quiz');
 const submitButton = document.getElementById('submit');
